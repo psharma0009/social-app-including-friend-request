@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#005A99</color>
+    <color name="colorPrimaryDark">#005A99</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="yellow">#FED235</color>
+    <color name="transparent_white">#88ffffff</color>
+    <color name="unselectedIconColor">#aaa</color>
+    <color name="appWhite">#FFffffff</color>
+    <color name="semiTranslucent">#da000000</color>
+    <color name="translucentWhite">#82ffffff</color>
+    <color name="darkGrey">#424242</color>
+    <color name="darkerGrey">#212121</color>
+    <color name="mediumGrey">#9E9E9E</color>
+    <color name="lightGrey">#E0E0E0</color>
+    <color name="lighterGrey">#EEEEEE</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="pink">#c2185b</color>
+    <color name="grey">#757575</color>
+    <color name="light_grey">#c5c5c5</color>
+
+    <color name="splash">#14bef0</color>
+    <color name="text_color">#1686d9</color>
+    <color name="bg_color">#f5f5f5</color>
+    <color name="button_bg">#1686d8</color>
+    <color name="black">#000000</color>
+    <color name="bg_row_background">#fa315b</color>
+    <color name="item_name">#535353</color>
+    <color name="description">#a9a9a9</color>
+    <color name="colorAccentTrans">#333F51B5</color>
+    <color name="placeholder_bg">#dddddd</color>
+
+</resources>

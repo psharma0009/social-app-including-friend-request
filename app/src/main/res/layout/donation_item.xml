@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Requested Money"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:id="@+id/requestedAmount"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_focuses_bg"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="9000 Rs"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="45dp"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_height="45dp"
+            android:src="@drawable/album4"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/user_profile_name"
+            android:layout_marginStart="@dimen/dp_10"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_15"
+            android:text="Raj Maniti"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/description"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Request Description"
+            android:textColor="@color/text_color"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/donationImage"
+        android:layout_marginTop="@dimen/dp_5"
+        android:scaleType="fitXY"
+        android:src="@drawable/demo1" />
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isb_indicator_color="@color/grey"
+        app:isb_indicator_text_color="@color/white"
+        app:isb_indicator_text_size="18sp"
+        app:isb_max="9000"
+        android:clickable="false"
+        app:isb_min="5"
+        android:layout_marginTop="@dimen/dp_5"
+        app:isb_only_thumb_draggable="false"
+        app:isb_progress="2500"
+        app:isb_seek_smoothly="true"
+        app:isb_show_indicator="rounded_rectangle"
+        app:isb_show_tick_marks_type="oval"
+        app:isb_show_tick_texts="true"
+        app:isb_thumb_color="@color/colorAccent"
+        app:isb_thumb_size="20dp"
+        app:isb_tick_marks_drawable="@mipmap/ic_launcher"
+        app:isb_tick_marks_size="13dp"
+        app:isb_tick_texts_color="@color/colorPrimary"
+        app:isb_tick_texts_size="15sp"
+        app:isb_ticks_count="5"
+        app:isb_track_background_color="@color/colorPrimary"
+        app:isb_track_background_size="2dp"
+        app:isb_track_progress_color="@color/colorAccent"
+        app:isb_track_progress_size="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal is"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/totalAmount"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9000 Rs"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Is Done"
+            android:gravity="end"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/dp_2"
+            android:layout_width="wrap_content"
+            android:id="@+id/currentAmount"
+            android:layout_height="wrap_content"
+            android:text="2546 Rs"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/dp_5"/>
+
+    <Button
+        android:id="@+id/submitDonation"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:drawablePadding="10sp"
+        android:paddingStart="20sp"
+        android:paddingLeft="10dp"
+        android:text="Submit"
+        android:background="@color/colorAccent"
+        android:textColor="@color/appWhite"
+        android:textSize="15sp"
+        android:textStyle="bold">
+
+        <requestFocus />
+
+    </Button>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/dp_5"/>
+
+</LinearLayout>

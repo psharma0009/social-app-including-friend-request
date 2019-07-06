@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighterGrey"
+    android:orientation="vertical"
+    tools:context="com.eurakan.withmee.Activity.Chats">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_back"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/dp_5"-->
+        <!--android:background="@drawable/edit_text_bg_selector"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@android:color/transparent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:hint="Search..."&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="@dimen/dp_10"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="15sp" />&ndash;&gt;-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:drawableTint="@color/colorPrimary"-->
+            <!--android:drawableStart="@drawable/ic_search_friends"-->
+            <!--android:gravity="center"-->
+            <!--android:text=""-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textStyle="bold" />-->
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

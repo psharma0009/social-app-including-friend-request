@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_back"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/lighterGrey"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lighterGrey"
+            tools:context="com.eurakan.withmee.Activity.FriendActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/coverPhoto"
+                android:scaleType="fitXY"
+                android:src="@drawable/demo1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="110dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2sp"
+                android:src="@drawable/album3" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="120dp"
+                android:layout_toEndOf="@id/user_profile"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:id="@+id/friendProfileName"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mdtp_transparent_black"
+                    android:padding="3dp"
+                    android:text="Raj Minati"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@color/mdtp_transparent_black"
+                    android:padding="3dp"
+                    android:id="@+id/friendProfileDOB"
+                    android:text="DOB: 10/03/1995"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_5"
+                android:layout_below="@id/ll1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/friendAdd"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:background="@drawable/rounded_bt"
+                        android:gravity="center"
+                        android:text="Add Friend"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:id="@+id/friendProfileCity"
+
+                        android:text="Lives In: Delhi"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/friendProfileStudy"
+
+                        android:text="Study In: LPS Public School"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Work: Paytm"
+                        android:id="@+id/friendProfileWork"
+
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/friendProfileStatus"
+
+                        android:text="Living Status: Ready to Mingle"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/friendProfileEmail"
+                        android:layout_height="wrap_content"
+                        android:text="Email: abcd@abc.com"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll2"
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="@dimen/dp_5"
+                android:background="@color/white"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableStart="@drawable/ic_camera"
+                    android:gravity="center_vertical"
+                    android:text="PHOTOS"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:id="@+id/userProfileAddPhoto"
+                    android:text="Add Photo" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/photos_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll3"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:layout_marginStart="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_5"
+                android:nestedScrollingEnabled="false"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photos_grid"
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="@dimen/dp_5"
+                android:background="@color/white"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawableTint="@color/colorAccent"
+                    android:gravity="center_vertical"
+                    android:text="FRIENDS"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:text="View All" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/friends_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll5"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:layout_marginStart="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_5"
+                android:nestedScrollingEnabled="false"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <LinearLayout
+                android:id="@+id/ll6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/friends_grid"
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="@dimen/dp_5"
+                android:background="@color/white"
+                android:paddingStart="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawableTint="@color/colorAccent"
+                    android:gravity="center_vertical"
+                    android:text="All Private Posts"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll6"
+                android:layout_marginTop="@dimen/dp_10"
+                android:id="@+id/blankView"
+                android:background="@color/light_grey" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/posts_recycler_view"
+                android:layout_below="@id/blankView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:layout_marginStart="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_5"
+                android:nestedScrollingEnabled="false"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

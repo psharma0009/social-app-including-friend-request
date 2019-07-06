@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_8"
+    android:background="@color/lighterGrey">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/productParent"
+        android:orientation="vertical">
+
+        <RatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rating="3.5"
+            android:numStars="5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:id="@+id/productName"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sellingPrice"
+            android:text="Rs. 4000/-"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buy_now"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/rounded_bt"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10"
+            android:text="BUY NOW"
+            android:textSize="@dimen/sp_10"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/productImage"
+            android:src="@drawable/product" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/imageView_close"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="top|right"
+        android:clickable="true"
+        android:background="@android:drawable/ic_delete" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#da0c0c"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Redeem Using Paytm"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et"
+        android:hint="Mobile Number"
+        android:padding="@dimen/dp_5"
+        android:paddingStart="@dimen/dp_10"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_bg_selector"
+/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:padding="@dimen/dp_5"
+        android:paddingStart="@dimen/dp_10"
+        android:hint="Full Name"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_bg_selector"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et3"
+        android:hint="Amount"
+        android:padding="@dimen/dp_5"
+        android:paddingStart="@dimen/dp_10"
+        android:maxLength="3"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_bg_selector"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/big_grey_btn"
+            android:text="Submit"
+            android:padding="@dimen/dp_5"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

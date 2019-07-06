@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="Profile"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/changePassword"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_lock"
+        android:title="Change Password"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/pendingFriends"
+        android:enabled="true"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_friends_zone"
+        android:title="Friend Requests"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/aboutUs"
+        android:enabled="true"
+        android:iconTint="@color/white"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="About Us"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/terms"
+        android:enabled="true"
+        android:iconTint="@color/white"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="Terms and Conditions"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/privacyPolicy"
+        android:enabled="true"
+        android:iconTint="@color/white"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Privacy policy"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/faqs"
+        android:enabled="true"
+        android:iconTint="@color/white"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="FAQs"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/contactus"
+        android:enabled="true"
+        android:iconTint="@color/white"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Contact us"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/logout"
+        android:enabled="true"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout"
+        app:showAsAction="ifRoom" />
+
+</menu>
+

@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eurakan.withmee.Fragment.Donation">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/buttonParent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/white"
+        >
+
+        <Button
+            android:id="@+id/submitDonation"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:drawablePadding="10sp"
+            android:paddingStart="20sp"
+            android:paddingLeft="10dp"
+            android:text="Submit Your Request"
+            android:background="@color/colorAccent"
+            android:textColor="@color/appWhite"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+            <requestFocus />
+        </Button>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/donationtextParent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@color/white"
+            >
+
+            <Button
+                android:id="@+id/textDonation"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:drawablePadding="10sp"
+                android:paddingStart="20sp"
+                android:paddingLeft="10dp"
+                android:text="All Donations"
+                android:background="@color/transparent_white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+                <requestFocus />
+            </Button>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_below="@+id/buttonParent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view"/>
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
